@@ -7,12 +7,38 @@
       display: block;
       margin: 0 auto; /* Center the button */
       background-color: #87CEEB; /* Light blue color */
-      border: black;
+      border: 10px solid transparent; /* Set the border to be 10px wide and transparent */
+      animation: rainbow-border 1s infinite; /* Animate the border with the 'rainbow-border' animation, with a duration of 1 second, and repeat indefinitely */
       color: white;
       padding: 15px 32px;
       text-align: center;
       text-decoration: none;
       font-size: 16px;
+    }
+
+    /* Define the 'rainbow-border' animation */
+    @keyframes rainbow-border {
+      0% {
+        border-color: red;
+      }
+      16% {
+        border-color: orange;
+      }
+      33% {
+        border-color: yellow;
+      }
+      50% {
+        border-color: green;
+      }
+      66% {
+        border-color: blue;
+      }
+      83% {
+        border-color: purple;
+      }
+      100% {
+        border-color: red;
+      }
     }
   </style>
 </head>
