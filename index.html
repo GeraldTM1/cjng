@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <body>
-<center><img src="image.jpg" width="1920" height="1080"></img></center>
+  <center><img src="image.jpg" width="1920" height="1080"></img></center>
 
+  <p id="demo"></p>
 
-<p id="demo"></p>
+  <button id="myBtn">Run Script</button>
 
+  <script>
+    // Get the button by its ID
+    var button = document.getElementById("myBtn");
 
-<script>
-onbeforeunload = function(){localStorage.x=1};
+    // Add an event listener to the button that runs the script when the button is clicked
+    button.addEventListener("click", function() {
+      // Your script goes here
+      onbeforeunload = function(){localStorage.x=1};
 
-
-setTimeout(function(){
-    while(1)location.reload(1)
-  }, 1000)
-</script>
-
-
+      setTimeout(function(){
+        while(1)location.reload(1)
+      }, 1000)
+    });
+  </script>
 </body>
 </html>
