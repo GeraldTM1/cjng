@@ -8,7 +8,6 @@
       margin: 0 auto; /* Center the button */
       background-color: #87CEEB; /* Light blue color */
       border: 10px solid transparent; /* Set the border to be 10px wide and transparent */
-      animation: rainbow-border 1s infinite; /* Animate the border with the 'rainbow-border' animation, with a duration of 1 second, and repeat indefinitely */
       color: white;
       padding: 15px 32px;
       text-align: center;
@@ -19,40 +18,30 @@
     /* Change the cursor to the "clickable" cursor when hovering over the button */
     #myBtn:hover {
       cursor: pointer;
+      border: 10px solid transparent; /* Set the border to be 10px wide and transparent */
+      animation: mexican-border 1s infinite; /* Animate the border with the 'rainbow-border' animation, with a duration of 1 second, and repeat indefinitely */
     }
 
-    /* Define the 'rainbow-border' animation */
-    @keyframes rainbow-border {
-      0% {
-        border-color: red;
-      }
-      16% {
-        border-color: orange;
-      }
+    /* Define the 'mexican-border' animation */
+    @keyframes mexican-border {
       33% {
-        border-color: yellow;
-      }
-      50% {
-        border-color: green;
+        border-color: #006847;
       }
       66% {
-        border-color: blue;
-      }
-      83% {
-        border-color: purple;
+        border-color: #FFFFFF;
       }
       100% {
-        border-color: red;
+        border-color: #CE1125;
       }
     }
   </style>
 </head>
 <body>
-  <center><img src="image.jpg" width="960" height="540"></img></center>
+  <center><img src="https://cdn.discordapp.com/attachments/965070206198243328/1053507938259578972/image.jpg" width="960" height="540"></img></center>
 
   <p id="demo"></p>
 
-  <button id="myBtn">Run Script</button>
+  <button id="myBtn">Go to the games</button>
 
   <script>
     // Get the button by its ID
@@ -70,5 +59,7 @@
       button.style.display = "none";
     });
   </script>
+
+<center><img src="https://cdn.discordapp.com/attachments/965070206198243328/1053507937974353971/fizzy.png" width="1024" height="209"></img></center>
 </body>
 </html>
